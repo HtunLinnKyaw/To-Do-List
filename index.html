@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+<body>
+    <p id="one">Htun Linn Kyaw</p>
+    <p id="two">Something</p>
+<script>
+        // document.getElementById("one").onclick= function (){
+        //     alert("this is onclick property")
+        // }
+        // document.getElementById("one").addEventListener("click",function (){
+        //     alert("this is addEventListener")
+        // })
+        // function run(){
+        //     alert("this is attr")
+        // }
+
+        let body= document.body;
+        let p = document.createElement("p"); // <p></p>
+        let t = document.createTextNode("this is text"); // this is text
+        p.appendChild(t);
+
+        let two =  document.getElementById("two");
+
+        body.appendChild(p);
+        body.insertBefore(p,two)
+</script>
+</body>
+</html>
+</html>
